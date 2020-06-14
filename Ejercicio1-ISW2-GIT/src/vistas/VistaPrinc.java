@@ -60,7 +60,7 @@ public class VistaPrinc extends javax.swing.JFrame {
         jLabel4.setText("Integrantes: ");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, -1, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "integrante1", "integrante2", "integrante3", "integrante4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Integrantes", "David", "Jose David", "Nicole", "Paul" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -74,9 +74,7 @@ public class VistaPrinc extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Contenedor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 140, 30));
-
-        jTextField1.setText("jTextField1");
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 320, -1, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 140, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/shutterstock_1092938375-770x540.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -89,10 +87,12 @@ public class VistaPrinc extends javax.swing.JFrame {
     }//GEN-LAST:event_Contenedor1ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-        //Contenedor1.setText(jComboBox1.getSelectedItem().toString());
-        jTextField1.setText(jComboBox1.getSelectedItem().toString());
+        // TODO add your handling code here:        
+        //jTextField1.setText(jComboBox1.getSelectedItem().toString());
         
+        if (jComboBox1.getSelectedItem().toString()=="Paul"){
+            Contenedor1.setText(jComboBox1.getSelectedItem().toString());    
+        }
         
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
