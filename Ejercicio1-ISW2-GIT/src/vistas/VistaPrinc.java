@@ -91,7 +91,11 @@ public class VistaPrinc extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
         //Contenedor1.setText(jComboBox1.getSelectedItem().toString());
+        
+        if (jComboBox1.getSelectedItem().toString()=="Paul"){
         jTextField1.setText(jComboBox1.getSelectedItem().toString());
+        }
+        
         
         
     }//GEN-LAST:event_jComboBox1ActionPerformed
