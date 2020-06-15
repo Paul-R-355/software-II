@@ -28,13 +28,14 @@ public class VistaPrinc extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel5 = new javax.swing.JLabel();
-        contenedor4 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
-        Contenedor1 = new javax.swing.JTextField();
-        contenedor2 = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -44,13 +45,6 @@ public class VistaPrinc extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Escuela Politécnica Nacional ");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
-
-        contenedor4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                contenedor4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(contenedor4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 360, 140, 30));
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
@@ -68,21 +62,17 @@ public class VistaPrinc extends javax.swing.JFrame {
         jLabel4.setText("Integrantes: ");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, -1, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Integrantes", "David", "Jose David", "Nicole", "Paul" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Estudiantes", "David", "Jose David", "Nicole", "Paul" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 120, -1));
-
-        Contenedor1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Contenedor1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Contenedor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 140, 30));
-        getContentPane().add(contenedor2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 140, 30));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 270, 130, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 300, 130, -1));
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 340, 130, -1));
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 380, 130, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/shutterstock_1092938375-770x540.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -90,29 +80,14 @@ public class VistaPrinc extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Contenedor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Contenedor1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Contenedor1ActionPerformed
-
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:        
-        //jTextField1.setText(jComboBox1.getSelectedItem().toString());
-        
-        if (jComboBox1.getSelectedItem().toString()=="Paul"){
-            Contenedor1.setText(jComboBox1.getSelectedItem().toString());    
-        }
-        if (jComboBox1.getSelectedItem().toString()=="David"){
-            contenedor2.setText(jComboBox1.getSelectedItem().toString());  
-        }
-            if (jComboBox1.getSelectedItem().toString()=="Nicole"){
-            contenedor4.setText(jComboBox1.getSelectedItem().toString());  
-        }
-        
-    }//GEN-LAST:event_jComboBox1ActionPerformed
-
-    private void contenedor4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contenedor4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_contenedor4ActionPerformed
+         //jTextField1.setText(jComboBox1.getSelectedItem().toString());
+         
+         
+         
+         
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -150,14 +125,15 @@ public class VistaPrinc extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField Contenedor1;
-    private javax.swing.JTextField contenedor2;
-    private javax.swing.JTextField contenedor4;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
 }
