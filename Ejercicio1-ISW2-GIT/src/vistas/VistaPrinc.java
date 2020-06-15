@@ -28,6 +28,7 @@ public class VistaPrinc extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel5 = new javax.swing.JLabel();
+        contenedor4 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -43,6 +44,13 @@ public class VistaPrinc extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Escuela Politécnica Nacional ");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
+
+        contenedor4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contenedor4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(contenedor4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 360, 140, 30));
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
@@ -94,10 +102,17 @@ public class VistaPrinc extends javax.swing.JFrame {
             Contenedor1.setText(jComboBox1.getSelectedItem().toString());    
         }
         if (jComboBox1.getSelectedItem().toString()=="David"){
-            contenedor2.setText(jComboBox1.getSelectedItem().toString());    
+            contenedor2.setText(jComboBox1.getSelectedItem().toString());  
+        }
+            if (jComboBox1.getSelectedItem().toString()=="Nicole"){
+            contenedor4.setText(jComboBox1.getSelectedItem().toString());  
         }
         
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void contenedor4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contenedor4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_contenedor4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -137,6 +152,7 @@ public class VistaPrinc extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Contenedor1;
     private javax.swing.JTextField contenedor2;
+    private javax.swing.JTextField contenedor4;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
